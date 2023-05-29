@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Оформление вертикального меню</title>
+<link rel="stylesheet" href="../css/font-awesome.css">
 <style>
 	html {
 		background: #f0f0f0;
@@ -21,16 +22,17 @@
 		width: 16px;
 		height: 16px;
 		float: left;
-		background: url("icons.png") no-repeat;
-		cursor: pointer;
-		background-position-y: -16px;
+	}
+	
+	.menu li {
+		list-style-type: none;
 	}
 	.menu li:hover .icon {
-		background-position-y: 0
+
 	}
 	.menu li:hover .leaf .icon {
-		background-position-y: -32px;
 		cursor: default;
+		background-image: none;
 	}
 	.menu li ul {
 		display: none;
@@ -44,86 +46,86 @@
 <body>
 <nav class="menu">
 	<ul>
-		<li type="none" class="opened">
-			<div class="icon"></div>
+		<li class="opened">
+			<div class="icon"><i class="fa fa-plus-square-o"></i></div>
 			<div class="text">Фильмы</div>
 			<ul>
-				<li type="none" class="leaf">
-					<div class="icon"></div>
+				<li class="leaf">
+					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
 					<div class="text">Экшн</div>
 				</li>
-				<li type="none" class="leaf">
-					<div class="icon"></div>
+				<li class="leaf">
+					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
 					<div class="text">Мелодрамы</div>
 				</li>
-				<li type="none" class="leaf">
-					<div class="icon"></div>
+				<li class="leaf">
+					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
 					<div class="text">Сериалы</div>
 				</li>
-				<li type="none" class="leaf">
-					<div class="icon"></div>
+				<li class="leaf">
+					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
 					<div class="text">Семейные</div>
 				</li>
 			</ul>
 		</li>
-		<li type="none" class="opened">
-			<div class="icon"></div>
+		<li class="opened">
+			<div class="icon"><i class="fa fa-plus-square-o"></i></div>
 			<div class="text">Музыка</div>
 			<ul>
-				<li type="none" class="leaf">
-					<div class="icon"></div>
+				<li class="leaf">
+					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
 					<div class="text">Классика</div>
 				</li>
-				<li type="none" class="leaf">
-					<div class="icon"></div>
+				<li class="leaf">
+					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
 					<div class="text">Джаз</div>
 				</li>
-				<li type="none" class="leaf">
-					<div class="icon"></div>
+				<li class="leaf">
+					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
 					<div class="text">Рок</div>
 				</li>
-				<li type="none" class="leaf">
-					<div class="icon"></div>
+				<li class="leaf">
+					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
 					<div class="text">Грандж</div>
 				</li>
 			</ul>
 		</li>
-		<li type="none" class="opened">
-			<div class="icon"></div>
+		<li class="opened">
+			<div class="icon"><i class="fa fa-plus-square-o"></i></div>
 			<div class="text">Софт</div>
 			<ul>
-				<li type="none" class="leaf">
-					<div class="icon"></div>
+				<li class="leaf">
+					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
 					<div class="text">Графика</div>
 				</li>
-				<li type="none" class="leaf">
-					<div class="icon"></div>
+				<li class="leaf">
+					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
 					<div class="text">3D-моделирование</div>
 				</li>
-				<li type="none" class="leaf">
-					<div class="icon"></div>
+				<li class="leaf">
+					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
 					<div class="text">Машинопись</div>
 				</li>
-				<li type="none" class="leaf">
-					<div class="icon"></div>
+				<li class="leaf">
+					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
 					<div class="text">Переводчики</div>
 				</li>
 			</ul>
 		</li>
-		<li type="none" class="opened">
-			<div class="icon"></div>
+		<li class="opened">
+			<div class="icon"><i class="fa fa-plus-square-o"></i></div>
 			<div class="text">Игры</div>
 			<ul>
-				<li type="none" class="leaf">
-					<div class="icon"></div>
+				<li class="leaf">
+					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
 					<div class="text">РПГ</div>
 				</li>
-				<li type="none" class="leaf">
-					<div class="icon"></div>
+				<li class="leaf">
+					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
 					<div class="text">Шутеры</div>
 				</li>
-				<li type="none" class="leaf">
-					<div class="icon"></div>
+				<li class="leaf">
+					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
 					<div class="text">Пасьянсы</div>
 				</li>
 			</ul>

@@ -3,28 +3,39 @@
 <head>
 <meta charset="utf-8">
 <title>Списки</title>
+<style>
+ul {
+    list-style-type: square;
+}
+ul ul {
+    list-style-type: disc;
+}
+ul ul ul {
+    list-style-type: circle;
+}
+</style>
 </head>
 <body>
-<ul type="square">
+<ul>
     <li>Курсы
         <ol type="1">
             <li>Каталог курсов
-                <ul type="disc">
+                <ul>
                     <li>Курсы для пользователей
-                        <ul type="circle">
+                        <ul>
                             <li>Компьютерные курсы для начинающих</li>
                             <li>Office 2003</li>
                             <li>Курсы для продвинутых пользователей</li>
                         </ul>
                     </li>
                     <li>Настройка и ремонт ПК
-                        <ul type="circle">
+                        <ul>
                             <li>Настройка офисных и домашних компьютеров</li>
                             <li>Техническое обслуживание и ремонт ПЭВМ</li>
                         </ul>
                     </li>
                     <li>Интернет-технологии
-                        <ul type="circle">
+                        <ul>
                             <li>Интернет</li>
                             <li>PHP</li>
                             <li>Web-мастеринг</li>
@@ -32,7 +43,7 @@
                         </ul>
                     </li>
                     <li>Компьютерная графика, верстка, дизайн
-                        <ul type="circle">
+                        <ul>
                             <li>Photoshop</li>
                             <li>CorelDRAW</li>
                             <li>QuarkXPress</li>

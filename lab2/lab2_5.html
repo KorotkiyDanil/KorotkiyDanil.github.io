@@ -10,22 +10,22 @@
 <table>
     <tbody>
         <tr>
-            <td>E-mail</td>
-            <td colspan="2"><input type="email" name="login" size="20" maxlength="25" required></td>
+            <td><label for="login">E-mail</label></td>
+            <td colspan="2"><input type="email" name="login" id="login" size="20" maxlength="25" required></td>
         </tr>
         <tr>
-            <td>Пароль</td>  
-            <td colspan="2"><input type="password" name="pass" size="20" maxlength="25" required></td>
+            <td><label for="pass">Пароль</label></td>  
+            <td colspan="2"><input type="password" name="pass" id="pass" size="20" maxlength="25" required></td>
         </tr>
         <tr>
-            <td>Пол</td>  
-            <td><input type="radio" name="sex" value="M" checked>Мужчина</td>
-             <td><input type="radio" name="sex" value="F">Женщина</td>
+            <td>Пол</td>
+            <td><input type="radio" name="sex" id="male" value="M" checked><label for="male">Мужчина</label></td>
+            <td><input type="radio" name="sex" id="female" value="F"><label for="female">Женщина</label></td>
         </tr>
         <tr>
-            <td>Год рождения</td>
+            <td><label for="birthyear">Год рождения</label></td>
             <td colspan="2">
-                <select name="birthyear" size="1">
+                <select name="birthyear" id="birthyear" size="1">
                     <option value="1990">1990</option>
                     <option value="1991">1991</option>
                     <option value="1992">1992</option>
@@ -46,7 +46,7 @@
             <td></td>
             <td colspan="2">
                 <label>
-                    <input type="checkbox" name="lang" value="es"">Испанский
+                    <input type="checkbox" name="lang" value="es">Испанский
                 </label>  
             </td>
         </tr>
@@ -75,8 +75,8 @@
             </td>
         </tr>
         <tr>
-            <td>Обо мне</td>
-            <td colspan="2"><textarea name="misc" cols="30" rows="10"></textarea></td>
+            <td><label for="misc">Обо мне</label></td>
+            <td colspan="2"><textarea name="misc" id="misc" cols="30" rows="10"></textarea></td>
         </tr>
     </tbody>
 </table>
