@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Использование float при построении колонок</title>
+<style type="text/css">
+.container {
+    display: grid;
+    grid-template-columns: [left] 200px [center] auto [right] 200px;
+    gap: 10px;
+}
+#left {
+    background:#ccf;
+    align-self: flex-start;
+}
+#center {
+    background:#cfc;
+}
+#right {
+    background:#fcc;
+    align-self: flex-start;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div id="left">left<br>left<br>left<br>left<br>left</div>
+    <div id="center">center text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</div>
+    <div id="right">right<br>right<br>right<br>right</div>
+</div>
+</body>
+</html>
