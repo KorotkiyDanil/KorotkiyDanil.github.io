@@ -18,21 +18,8 @@
 	.menu ul ul {
 		padding-top: 0;
 	}
-	.menu .icon {
-		width: 16px;
-		height: 16px;
-		float: left;
-	}
-	
 	.menu li {
 		list-style-type: none;
-	}
-	.menu li:hover .icon {
-
-	}
-	.menu li:hover .leaf .icon {
-		cursor: default;
-		background-image: none;
 	}
 	.menu li ul {
 		display: none;
@@ -40,91 +27,114 @@
 	.menu li:hover ul {
 		display: block;
 	}
+	.menu .icon {
+		width: 16px;
+		height: 16px;
+		float: left;
+	}
+	.menu .icon::before {
+		content: "\f196";
+		font-family: FontAwesome;
+	}
+	.menu li:hover .icon {
+		cursor: pointer;
+	}
+	.menu li:hover .icon::before {
+		content: "\f147";
+		font-family: FontAwesome;
+	}
+	.menu li:hover .leaf .icon {
+		cursor: default;
+	}
+	.menu li:hover .leaf .icon::before {
+		content: "\f192";
+		font-family: FontAwesome;
+	}
 </style>
 </head>
 <body>
 <nav class="menu">
 	<ul>
 		<li class="opened">
-			<div class="icon"><i class="fa fa-plus-square-o"></i></div>
+			<div class="icon"></div>
 			<div class="text">Фильмы</div>
 			<ul>
 				<li class="leaf">
-					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
+					<div class="icon"></div>
 					<div class="text">Экшн</div>
 				</li>
 				<li class="leaf">
-					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
+					<div class="icon"></div>
 					<div class="text">Мелодрамы</div>
 				</li>
 				<li class="leaf">
-					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
+					<div class="icon"></div>
 					<div class="text">Сериалы</div>
 				</li>
 				<li class="leaf">
-					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
+					<div class="icon"></div>
 					<div class="text">Семейные</div>
 				</li>
 			</ul>
 		</li>
 		<li class="opened">
-			<div class="icon"><i class="fa fa-plus-square-o"></i></div>
+			<div class="icon"></div>
 			<div class="text">Музыка</div>
 			<ul>
 				<li class="leaf">
-					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
+					<div class="icon"></div>
 					<div class="text">Классика</div>
 				</li>
 				<li class="leaf">
-					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
+					<div class="icon"></div>
 					<div class="text">Джаз</div>
 				</li>
 				<li class="leaf">
-					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
+					<div class="icon"></div>
 					<div class="text">Рок</div>
 				</li>
 				<li class="leaf">
-					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
+					<div class="icon"></div>
 					<div class="text">Грандж</div>
 				</li>
 			</ul>
 		</li>
 		<li class="opened">
-			<div class="icon"><i class="fa fa-plus-square-o"></i></div>
+			<div class="icon"></div>
 			<div class="text">Софт</div>
 			<ul>
 				<li class="leaf">
-					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
+					<div class="icon"></div>
 					<div class="text">Графика</div>
 				</li>
 				<li class="leaf">
-					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
+					<div class="icon"></div>
 					<div class="text">3D-моделирование</div>
 				</li>
 				<li class="leaf">
-					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
+					<div class="icon"></div>
 					<div class="text">Машинопись</div>
 				</li>
 				<li class="leaf">
-					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
+					<div class="icon"></div>
 					<div class="text">Переводчики</div>
 				</li>
 			</ul>
 		</li>
 		<li class="opened">
-			<div class="icon"><i class="fa fa-plus-square-o"></i></div>
+			<div class="icon"></div>
 			<div class="text">Игры</div>
 			<ul>
 				<li class="leaf">
-					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
+					<div class="icon"></div>
 					<div class="text">РПГ</div>
 				</li>
 				<li class="leaf">
-					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
+					<div class="icon"></div>
 					<div class="text">Шутеры</div>
 				</li>
 				<li class="leaf">
-					<div class="icon"><i class="fa fa-dot-circle-o"></i></div>
+					<div class="icon"></div>
 					<div class="text">Пасьянсы</div>
 				</li>
 			</ul>

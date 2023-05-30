@@ -1,6 +1,18 @@
-body{color:white; background: black url("pattern-thin-trio-blop.png") repeat}
-p{text-align: right}
-h1, h2, h3, h4, h5, h6{text-align: right; font-family: 'Roboto', sans-serif; color: red}
-h1, h2, p{margin: 20px}
-strong{font-family: 'Caveat'}
-em{color: yellowgreen; border-bottom-style: double; padding: 5px}
+body {
+    color:white; background: black url("pattern-thin-trio-blop.png") repeat;
+}
+p {
+    text-align: right;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: right; font-family: 'Roboto', sans-serif; color: red;
+}
+h1, h2, p {
+    margin: 20px;
+}
+strong {
+    font-family: 'Caveat';
+}
+em {
+    color: yellowgreen; border-bottom-style: double; padding: 5px;
+}
