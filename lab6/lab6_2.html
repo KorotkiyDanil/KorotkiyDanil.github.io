@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Главная страница</title>
+<link type="text/css" rel="stylesheet" href="css/main.css">
+<style>
+	body {
+		padding: 0;
+		margin: 10px;
+	}
+	#outer {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+	    flex-wrap: nowrap;
+	    gap: 10px;
+		min-height: calc(100vh - 230px);
+	}
+	#header {
+		background:#cde;
+		min-height: 200px;
+	}
+	#footer {
+		background:#dce;
+		height: 200px;
+		margin-top: 10px;
+	}
+	#inner {
+		display: flex;
+		flex-direction: row;
+	    flex-wrap: nowrap;
+		align-items: stretch;
+	    gap: 10px;
+	}
+	#center {
+		padding: 10px;
+	}
+	#right {
+		background-image: url(images/right.png);
+		padding: 20px;
+		min-width: 200px;
+	}
+	#left {
+		background-image: url(images/left.png);
+		min-width: 200px;
+	}
+	#left a {
+		color:#1d559d;
+	}
+	#left a:hover {
+		color:black;
+	}
+</style>
+</head>
+<body>
+<div id="outer">
+	<div id="header"></div>
+	<div id="inner">
+		<div id="left">
+			<ul>
+				<li><a href="#">Камень</a></li>
+				<li><a href="#">Ножницы</a></li>
+				<li><a href="#">Бумага</a></li>
+			</ul>
+		</div>
+		<div id="center">center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center</div>
+		<div id="right">right</div>
+	</div>
+</div>
+<div id="footer"></div>
+</body>
+</html>
