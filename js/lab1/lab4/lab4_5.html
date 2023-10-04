@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<body>
+<script>
+    "use strict";
+    function sortByAge(arr) {
+        arr.sort((a, b) => a.age > b.age ? 1 : -1);
+    }
+    let oleg = { name: "Олег", age: 18 };
+    let kiril = { name: "Кирилл", age: 25 };
+    let nikita = { name: "Никита", age: 19 };
+    let people = [oleg, kiril, nikita];
+    console.log(people[0].name);
+    console.log(people[1].name);
+    console.log(people[2].name);
+    sortByAge(people);
+    console.log(people[0].name);
+    console.log(people[1].name);
+    console.log(people[2].name); 
+</script>
+</body>
+</html>

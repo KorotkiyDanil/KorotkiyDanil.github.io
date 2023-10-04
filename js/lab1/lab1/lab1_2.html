@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<body>
+<script>
+    'use strict';
+    let message;
+    let n = prompt('Введите количество ворон', '');
+    let x0 = n%10;;
+    let x1 = n%100;
+    if (x1 > 10 && x1 < 15) alert('На ветке сидит ' + n + ' ворон');
+    else {
+        if (x0 == 1) alert('На ветке сидит ' + n + ' ворона');
+        else if (x0 > 1 && x0 < 5) alert('На ветке сидит ' + n + ' вороны');
+        else if (x0 > 4 || x0 == 0) alert('На ветке сидит ' + n + ' ворон');
+        else alert('О чём вообще речь?')
+    }
+</script>
+</body>
+</html>

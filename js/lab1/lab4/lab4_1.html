@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<body>
+<script>
+    'use strict';
+    let book1 = {};
+    book1.title = "Азбука";
+    book1.pubYear = 1976;
+    book1.price = 260;
+    let book2 = {
+      title: "Словарь",
+      pubYear: 1888,
+      price: 350,
+    };
+    for (let key in book1) {
+      console.log(key);
+      console.log(book1[key]);
+    }
+    for (let key in book2) {
+      console.log(key);
+      console.log(book2[key]);
+    }
+</script>
+</body>
+</html>
